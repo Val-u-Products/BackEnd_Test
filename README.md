@@ -1,6 +1,6 @@
 # BackEnd_Test
 
-Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: [API](https://pokeapi.co/) y devuelve una lista de diccionarios con la siguiente estructura:
+Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: [API](https://pokeapi.co/docs/v2#pokemon) y devuelve una lista de diccionarios con la siguiente estructura:
 
 ```
 [
