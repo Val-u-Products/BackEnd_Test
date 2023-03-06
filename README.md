@@ -1,33 +1,42 @@
 # BackEnd_Test
 
-Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: [https://api.example.com/data ](https://pokeapi.co/) y devuelve una lista de diccionarios con la siguiente estructura:
+Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: [API](https://pokeapi.co/) y devuelve una lista de diccionarios con la siguiente estructura:
 
 ```
 [
   {
-    "id": 1,
-    "name": "Producto 1",
-    "description": "Descripción del producto 1",
-    "date": "2022-03-02"
+    "id": 35,
+    "name": "clefairy",
+    "base_experience": 113,
+    "height": 6,
+    "is_default": true,
+    "order": 56,
+    "weight": 75,
   },
   {
-    "id": 2,
-    "name": "Producto 2",
-    "description": "Descripción del producto 2",
-    "date": "2022-03-01"
+    "id": 35,
+    "name": "clefairy",
+    "base_experience": 113,
+    "height": 6,
+    "is_default": true,
+    "order": 56,
+    "weight": 75,
   },
   {
-    "id": 3,
-    "name": "Producto 3",
-    "description": "Descripción del producto 3",
-    "date": "2022-02-28"
-  }
+    "id": 35,
+    "name": "clefairy",
+    "base_experience": 113,
+    "height": 6,
+    "is_default": true,
+    "order": 56,
+    "weight": 75,
+  },
 ]
 ```
-La tabla SQL para almacenar los datos se llama 'products' y tiene la siguiente estructura:
+La tabla SQL para almacenar los datos se llama 'pokemons' y tiene la siguiente estructura:
 
 ```
-CREATE TABLE IF NOT EXISTS products (
+CREATE TABLE IF NOT EXISTS pokemons (
     id INTEGER PRIMARY KEY,
     name TEXT,
     base_experience: INTEGER
