@@ -1,6 +1,6 @@
 # BackEnd_Test
 
-Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: https://api.example.com/data y devuelve una lista de diccionarios con la siguiente estructura:
+Se te ha encomendado la tarea de crear un programa Python que consuma los datos de una API RESTful y los almacene en una base de datos SQL. Se espera que el programa se ejecute automáticamente cada 24 horas y que actualice los datos de la base de datos. La API a consumir es: [https://api.example.com/data ](https://pokeapi.co/) y devuelve una lista de diccionarios con la siguiente estructura:
 
 ```
 [
@@ -30,8 +30,11 @@ La tabla SQL para almacenar los datos se llama 'products' y tiene la siguiente e
 CREATE TABLE IF NOT EXISTS products (
     id INTEGER PRIMARY KEY,
     name TEXT,
-    description TEXT,
-    date TEXT
+    base_experience: INTEGER
+    height: INTEGER
+    is_default: BOOLEAN
+    order: INTEGER
+    weight: INTEGER
 );
 ```
 
